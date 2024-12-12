@@ -25,27 +25,32 @@ function ConnectButtonPage() {
       wallets={wallets}
       theme={darkTheme({
         colors: {
-          accentText: "hsl(216, 78%, 45%)",
-          modalBg: "hsl(230, 43%, 10%)",
-          borderColor: "hsl(187, 84%, 10%)",
-          separatorLine: "hsl(228, 12%, 17%)",
+          primaryText: "#F6F8FF",
+                        secondaryText: "#2B333D",
+                        accentText: "#F6F8FF",
+                        modalOverlayBg: "#DAE8FC",
+                        modalBg: "#010101",
+                        accentButtonBg: "#2469DA",
+                        accentButtonText: "#F6F8FF",
+                        secondaryButtonBg: "#010101",
+                        secondaryButtonText: "#F6F8FF",
+                        secondaryButtonHoverBg: "#2469DA",
+                        separatorLine: "#2B333D",
+                        borderColor: "#2B333D",
+
+                        primaryButtonBg: "#2469DA",
+                        primaryButtonText: "#F6F8FF",
+
+                        connectedButtonBg: "#010101",
+                        connectedButtonBgHover: "#2469DA",
         },
+        style: {
+          borderRadius: "5px",
+        },
+        fontFamily: "Arial Black",
       })}
       connectModal={{ size: "compact" }}
-      auth={{
-        async doLogin(params) {
-          // call your backend to verify the signed payload passed in params
-        },
-        async doLogout() {
-          // call your backend to logout the user if needed
-        },
-        async getLoginPayload(params) {
-          // call your backend and return the payload
-        },
-        async isLoggedIn() {
-          // call your backend to check if the user is logged in
-        },
-      }}
+    
     />
   );
 }
