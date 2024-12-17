@@ -8,6 +8,7 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Convert from "./pages/Convert";
 import Market from "./pages/Market";
+import Dashboard from "./pages/Dashboard";
 
 
 
@@ -23,6 +24,7 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="/market" element={<Market />} />
+            <Route path="/dashboard" element={< Dashboard/>} />
           </Routes>
         </main>
         <Footer />
