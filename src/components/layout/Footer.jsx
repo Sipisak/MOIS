@@ -7,10 +7,9 @@ const Footer = () => {
 			<div className="container mx-auto text-center">
 				<p className="mb-2 text-sm">Connect with us on social media</p>
 				<div className="flex justify-center space-x-4 mb-4">
-					<a href="#" className="text-blue-500 hover:text-blue-400">Facebook </a>
-					<a href="#" className="text-blue-500 hover:text-blue-400">Twitter</a>
-					<a href="#" className="text-blue-500 hover:text-blue-400">Instagram</a>
-					<a href="#" className="text-blue-500 hover:text-blue-400">LinkedIn</a>
+					<a href="https://www.facebook.com/" className="text-blue-500 hover:text-blue-400">Facebook </a>
+					<a href="https://x.com/" className="text-blue-500 hover:text-blue-400">Twitter</a>
+					<a href="https://www.instagram.com/" className="text-blue-500 hover:text-blue-400">Instagram</a>
 				</div>
 				<p className="text-xs text-gray-500">&copy; {today.getFullYear()} Cryptex. All rights reserved.</p>
 			</div>
