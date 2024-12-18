@@ -74,6 +74,12 @@ const Navbar = () => {
             Log In
           </Link>
           <ConnectButtons />
+          <Link
+            to="/dashboard"
+            className="text-gray-300 border border-gray-500 px-4 py-1 rounded hover:bg-gray-700 hover:border-gray-400 transition duration-300"
+          >
+            Dashboard
+          </Link>
         </div>
       </div>
     </nav>
