@@ -52,14 +52,7 @@ const Ticker = () => {
     <div className="tradingview-widget-container" style={{ width: "100%" }}>
       <div className="tradingview-widget-container__widget" ref={containerRef}></div>
       <div className="tradingview-widget-copyright text-center mt-2">
-        <a
-          href="https://www.tradingview.com/"
-          rel="noopener noreferrer"
-          target="_blank"
-          style={{ color: "#2962FF", textDecoration: "none" }}
-        >
-          Track all markets on TradingView
-        </a>
+        
       </div>
     </div>
   );

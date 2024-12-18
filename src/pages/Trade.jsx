@@ -26,14 +26,14 @@ const TradePage = () => {
 
   const fetchOrderBook = async () => {
     const response = await axios.get(
-      "https://api.binance.com/api/v3/depth?symbol=BTCUSDT&limit=10"
+      "https://api.binance.com/api/v3/depth?symbol=BTCUSDT&limit=20"
     );
     setOrderBook(response.data.bids);
   };
 
   const fetchMarketTrades = async () => {
     const response = await axios.get(
-      "https://api.binance.com/api/v3/trades?symbol=BTCUSDT&limit=10"
+      "https://api.binance.com/api/v3/trades?symbol=BTCUSDT&limit=20"
     );
     setTrades(response.data);
   };
@@ -62,8 +62,7 @@ const TradePage = () => {
 
         {/* Chart Section */}
         <div className="col-span-6 bg-gray-800 p-4 rounded shadow-lg">
-          <h2 className="text-lg font-bold mb-4">BTC/USDT Chart</h2>
-          <div style={{ height: "400px" }}>
+          <div className="h-[600px] w-full">
             <TradingViewWidget />
           </div>
         </div>

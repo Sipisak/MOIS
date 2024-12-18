@@ -5,6 +5,8 @@ import ConnectButtons from "../common/Connectbutton";
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
+
+
   return (
     <nav className="bg-gray-900 text-gray-300 shadow-lg">
       <div className="container mx-auto flex justify-between items-center p-4">

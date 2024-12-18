@@ -13,8 +13,11 @@ import TradePage from "./pages/Trade";
 
 
 
+
 function App() {
+  
   return (
+  
     <Router>
       <div className="flex flex-col min-h-screen bg-gray-900 text-gray-100 font-sans">
         <Navbar />
@@ -32,6 +35,7 @@ function App() {
         <Footer />
       </div>
     </Router>
+  
   );
 }
 

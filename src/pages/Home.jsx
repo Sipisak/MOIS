@@ -24,7 +24,9 @@ const Home = () => {
           <img src="/hero-banner.png" alt="Mockup" />
         </div>
       </section>
-
+    <div> <p className="text-4xl lg:text-5xl font-bold text-center mb-12">
+            Top Performance Market
+          </p> </div>
       <TopPerformarnce />
 
       {/* Steps Section */}
