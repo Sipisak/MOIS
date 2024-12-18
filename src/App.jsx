@@ -9,6 +9,7 @@ import Register from "./pages/Register";
 import Convert from "./pages/Convert";
 import Market from "./pages/Market";
 import Dashboard from "./pages/Dashboard";
+import TradePage from "./pages/Trade";
 
 
 
@@ -25,6 +26,7 @@ function App() {
             <Route path="/register" element={<Register />} />
             <Route path="/market" element={<Market />} />
             <Route path="/dashboard" element={< Dashboard/>} />
+            <Route path="/trade" element={<TradePage />} />
           </Routes>
         </main>
         <Footer />

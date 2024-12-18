@@ -9,7 +9,6 @@ return (
   <div className="w-full h-[90vh]">
     <TradingViewWidget />
   </div>
- {/*   <Ticker /> */} 
 </div>
 );
 };

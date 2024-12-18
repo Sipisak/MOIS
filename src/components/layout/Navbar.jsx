@@ -52,6 +52,14 @@ const Navbar = () => {
           >
             Market
           </Link>
+
+          <Link
+            to="/trade"
+            className="block px-4 py-2 hover:text-yellow-500 transition duration-300"
+          >
+            Trade
+          </Link>
+
           <Link to="/convert"className="block px-4 py-2 hover:text-yellow-500 transition duration-300"> Convert </Link>
         </div>
 
