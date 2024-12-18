@@ -4,15 +4,18 @@ import ConnectButtons from "../common/Connectbutton";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isConnected, setIsConnected] = useState(false);
 
-
+  const handleConnectionChange = (connectionState) => {
+    setIsConnected(connectionState);
+  };
 
   return (
     <nav className="bg-gray-900 text-gray-300 shadow-lg">
       <div className="container mx-auto flex justify-between items-center p-4">
         {/* Logo */}
-        <Link 
-        to="/" className="text-2xl font-bold text-blue-500">Cryptex
+        <Link to="/" className="text-2xl font-bold text-blue-500">
+          Cryptex
         </Link>
 
         {/* Hamburger Icon */}
@@ -54,15 +57,18 @@ const Navbar = () => {
           >
             Market
           </Link>
-
           <Link
             to="/trade"
             className="block px-4 py-2 hover:text-yellow-500 transition duration-300"
           >
             Trade
           </Link>
-
-          <Link to="/convert"className="block px-4 py-2 hover:text-yellow-500 transition duration-300"> Convert </Link>
+          <Link
+            to="/convert"
+            className="block px-4 py-2 hover:text-yellow-500 transition duration-300"
+          >
+            Convert
+          </Link>
         </div>
 
         {/* Action Buttons */}
@@ -73,13 +79,15 @@ const Navbar = () => {
           >
             Log In
           </Link>
-          <ConnectButtons />
-          <Link
-            to="/dashboard"
-            className="text-gray-300 border border-gray-500 px-4 py-1 rounded hover:bg-gray-700 hover:border-gray-400 transition duration-300"
-          >
-            Dashboard
-          </Link>
+          <ConnectButtons onConnectionChange={handleConnectionChange} />
+          {isConnected && (
+            <Link
+              to="/dashboard"
+              className="text-gray-300 border border-gray-500 px-4 py-1 rounded hover:bg-gray-700 hover:border-gray-400 transition duration-300"
+            >
+              Dashboard
+            </Link>
+          )}
         </div>
       </div>
     </nav>
