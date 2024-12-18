@@ -22,8 +22,8 @@ function TradingViewWidget() {
           "style": "1",
           "locale": "en",
           "withdateranges": true,
+          "hide_side_toolbar": false,
           "allow_symbol_change": true,
-          "details": true,
           "calendar": false,
           "support_host": "https://www.tradingview.com"
         }`;

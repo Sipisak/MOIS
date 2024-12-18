@@ -1,5 +1,7 @@
 import React from "react";
 import TradingViewWidget from "../components/market/TradingViewWidget";
+import Ticker from "../components/market/Ticker";
+
 
 const Market = () => {
 return (
@@ -7,6 +9,7 @@ return (
   <div className="w-full h-[90vh]">
     <TradingViewWidget />
   </div>
+ {/*   <Ticker /> */} 
 </div>
 );
 };
